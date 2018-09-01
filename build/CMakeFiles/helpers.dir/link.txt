@@ -1,0 +1,2 @@
+/usr/bin/ar qc libhelpers.a  CMakeFiles/helpers.dir/src/colorLines.cpp.o CMakeFiles/helpers.dir/src/graph.cpp.o CMakeFiles/helpers.dir/src/maxflow.cpp.o
+/usr/bin/ranlib libhelpers.a
