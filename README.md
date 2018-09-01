@@ -61,9 +61,13 @@ Each of the images need to be placed in the "img_depth" folder with the same nam
 
 
 Step 7: 
-Running for a sample image:
+Running for a dataset:
 
 Goto build folder
+Copy segmentAllImages_temporal.sh from outside
+Change directory and image paths in the script 
+Run it by "bash segmentAllImages_temporal.sh"
+
 
 ./main <data folder>/images/img_24.jpg <data folder>/images_SegnetCityS/img_24.png <data folder>/images_SegnetCityS_road/img_24.png <data folder>/images_SegnetCityS_Nonroad/img_24.png <data folder>/img_depth/img_24.png result_bin.png result_24.png
 
