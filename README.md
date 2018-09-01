@@ -16,21 +16,34 @@ INSTRUCTIONS for Ubuntu
 STEP 1: INSTALL SegNet-Tutorial 
 Link : https://github.com/alexgkendall/SegNet-Tutorial
 
+
+
 Step 2: Merge the scripts and folders given in the folder "segnet_tutorial_scripts" with the folder "Segnet-Tutorial-Master" that is after installation of Step 1
+
+
 
 Step 3 (2D priors from SEGNET): The original Segnet code is meant for segmenting Images one by one We have provided a script "segmentAllImages_script.sh" 
 
 Keep all the images in the "images" directory inside your data directory
+
 Change the images directory inside the script by providing the path to the "images" directory.
+
 Run it by the command "bash segmentAllImages_script.sh"
 
+
+
 Step 4: Copy the folders (if not already copied): images_SegnetCityS, images_SegnetCityS_Nonroad, images_SegnetCityS_road
+
+
 
 Step 5 Change Parameters in src/main.cpp: Default Parmeters already set
 
 K:  change here for 2D weight
+
 B1 change here for weight of 3D component -> [0,1]; 0 means zero weight (2D only mode)
+
 S1: [0,1]; smoothness component (from color lines)
+
 
 
 Step 5: Install the joint segmentation code
@@ -40,8 +53,11 @@ REQUIREMENTS: OpenCV
 STEPS:
 
 mkdir build
+
 cd build
+
 cmake ..
+
 make
 
 
@@ -64,8 +80,11 @@ Step 7:
 Running for a dataset:
 
 Goto build folder
+
 Copy segmentAllImages_temporal.sh from outside
+
 Change directory and image paths in the script 
+
 Run it by "bash segmentAllImages_temporal.sh"
 
 
