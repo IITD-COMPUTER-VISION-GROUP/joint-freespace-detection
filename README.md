@@ -2,6 +2,10 @@
 A Joint 3D-2D based Method for Free Space Detection on Roads
 
 This code performs the CRF optimization for 3D-2D based Joint Freespace detection on Roads
+
+Please refer and cite:
+"A Joint 3D-2D based Method for Free Space Detection on Roads", Suvam Patra, Pranjal Maheshwari, Shashank Yadav, Chetan Arora, Subhashis Banerjee; IEEE Winter Conference on Applications of Computer Vision (WACV 2018)
+
 This code can either do a joint 3D -2D based optimzation or a pure 2D optimazion based on colorlines By changing the depth weights to 0
 
 REQUIREMENTS: SEGNET, OpenCV 
